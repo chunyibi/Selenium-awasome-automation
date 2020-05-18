@@ -4,6 +4,9 @@ I learn Selenium on my own. It is a great tool to automate browsers and parse in
 <ul>
 <li>How to keep scrolling down to the bottom:
 <ul>
+from selenium import webdriver<br>
+    browser = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver")<br>
+    browser.get("https://www.kickstarter.com/discover/advanced?woe_id=23424977&sort=magic&seed=2619898&page=1")<br>
 for i in range(100):<br>
 <ul>
     browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")<br>
